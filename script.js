@@ -2,1626 +2,1454 @@ const quizData = {
   // <!-------------------------------------------- WEEK 1---------------------------------------------------------->
   "Week 1": [
     {
-      question: "What is a transducer?",
-      options: [
-        "A device that converts energy from one form to another",
-        "A type of sensor that detects only energy",
-        "A digital communication device",
-        "A part of a computer processor",
-      ],
-      answer: "A device that converts energy from one form to another",
-    },
-    {
-      question: "What does sensor accuracy refer to?",
-      options: [
-        "The range of the sensor",
-        "The smallest detectable input change",
-        "The correctness of the output compared to a standard value",
-        "The sensor's response time",
-      ],
-      answer: "The correctness of the output compared to a standard value",
-    },
-    {
-      question: "What is an active sensor?",
-      options: [
-        "A sensor that can only sense physical changes",
-        "A sensor that operates without an external power source",
-        "A sensor that independently senses the input",
-        "A sensor that operates without any energy consumption",
-      ],
-      answer: "A sensor that independently senses the input",
-    },
-    {
-      question: "What does 'Actuator' primarily refer to in IIoT systems?",
-      options: [
-        "A device that stores data",
-        "A device that processes information",
-        "A device that converts signals into physical action",
-        "A device that enhances signal strength",
-      ],
-      answer: "A device that converts signals into physical action",
-    },
-    {
-      question: "Zigbee technology is popular for__",
-      options: [
-        "Long-range communications",
-        "High power consumption",
-        "Low-cost, low-power wireless mesh networks",
-        "High data rate transfer",
-      ],
-      answer: "Low-cost, low-power wireless mesh networks",
-    },
-    {
-      question: "Which of the following is true about 6LoWPAN?",
-      options: [
-        "It is used for high-power industrial networks",
-        "It enables IPv6 packets over low-power wireless networks",
-        "It focuses on high-speed ethernet",
-        "It's a standard for satellite communications",
-      ],
-      answer: "It enables IPv6 packets over low-power wireless networks",
-    },
-    {
-      question: "Near Field Communication (NFC) is typically used for:",
-      options: [
-        "Long-range satellite communications",
-        "High-power industrial networks",
-        "Short-range wireless interaction between electronic devices",
-        "Storing large amounts of data",
-      ],
-      answer: "Short-range wireless interaction between electronic devices",
+      question: "Which of the following is/are not a type of transducer?",
+      options: ["Speaker", "Microphone", "Solar panel", "Connecting wire"],
+      answer: "Connecting wire",
     },
     {
       question:
-        "Which of the following actuators work on the principle of compression and decompression?",
-      options: [
-        "Hydraulic Actuators",
-        "Thermal Actuators",
-        "Electric Actuators",
-        "Mechanical Actuators",
-      ],
-      answer: "Hydraulic Actuators",
+        "Sensor is sensitive to only the measured property. It is insensitive to any other property besides what it is designed to detect. True or false?",
+      options: ["True", "False"],
+      answer: "True",
     },
     {
-      question: "ISA 100.11a is significant in IIoT because it__.",
+      question:
+        "……….. …..sensors produce an output proportional to the magnitude of the quantity being measured.",
+      options: ["Scalar", "Vector", "Analog", "Digital"],
+      answer: "Scalar",
+    },
+    {
+      question: "What is the resolution of a sensor?",
       options: [
-        "Provides high-speed internet connectivity",
-        "Focuses on wireless network technology for industrial automation",
-        "Is used for long-range satellite communications",
-        "Enhances Bluetooth signal strength",
+        "It provides the difference between the measured value and the actual value of the sensing parameter.",
+        "It provides the smallest change in the input that a sensor is capable of sensing.",
+        "It provides the incremental changes produced in response by the system.",
+        "All of the above.",
       ],
       answer:
-        "Focuses on wireless network technology for industrial automation",
-    },
-    {
-      question: "What is the primary function of IEEE 802.15.4 in IoT?",
-      options: [
-        "High-speed data transmission",
-        "Providing security algorithms",
-        "Establishing low-rate wireless personal area networks",
-        "Data storage and retrieval",
-      ],
-      answer: "Establishing low-rate wireless personal area networks",
-    },
-    {
-      question: "Z-Wave technology is best suited for___.",
-      options: [
-        "Industrial communication",
-        "Home automation",
-        "Satellite communication",
-        "High-speed internet",
-      ],
-      answer: "Home automation",
-    },
-    {
-      question: "What is the maximum data rate possible in Wireless HART?",
-      options: ["2500 b/s", "2.5 mb/s", "250 kb/s", "None of the above"],
-      answer: "250 kb/s",
-    },
-    {
-      question: "QoS 2 in MQTT is also known as__.",
-      options: [
-        "At most once",
-        "At least once",
-        "Exactly once",
-        "None of the above",
-      ],
-      answer: "Exactly once",
+        "It provides the smallest change in the input that a sensor is capable of sensing.",
     },
     {
       question:
-        "COAP works on Request/Response framework based on the__ architecture.",
-      options: ["UDP", "TCP", "SCTP", "DCCP"],
-      answer: "UDP",
+        "………is a part of the system that deals with the control actions required in the system.",
+      options: ["Sensor", "Actuator", "Manager", "None of the above"],
+      answer: "Actuator",
     },
     {
-      question: "Infra-red sensor is an example of____.",
+      question: "What is the function of an electric rotary actuator?",
       options: [
-        "Acoustic Sensor",
-        "Mechanical Sensor",
-        "Electrical Sensor",
-        "Optical Sensor",
+        "Converts mechanical energy into electrical energy",
+        "Converts analog signals to digital signals",
+        "Converts electrical energy into rotational motion",
+        "All of the above",
       ],
-      answer: "Optical Sensor",
+      answer: "Converts electrical energy into rotational motion",
+    },
+    {
+      question:
+        "Which of the following communication standards provide a framework for WPAN?",
+      options: ["6LowPan", "IEEE 802.15.4", "Z-wave", "Wireless HART"],
+      answer: "IEEE 802.15.4",
+    },
+    {
+      question:
+        "The IEEE 802.15.4 standard uses DSSS scheme for data transmission. What does DSSS stand for?",
+      options: [
+        "Double Spread Spectrum Scheme",
+        "Direct-Sequence Spread Spectrum",
+        "Discrete-Sequence Spread Spectrum",
+        "Dynamic-Sequence Spread Spectrum",
+      ],
+      answer: "Direct-Sequence Spread Spectrum",
+    },
+    {
+      question: "When does Zigbee use the OQPSK modulation scheme?",
+      options: [
+        "When the operating frequency is less the 2.4 GHz",
+        "When the operating frequency is more than 2.4 GHz",
+        "When the operating frequency is 2.4 GHz",
+        "All of the above",
+      ],
+      answer: "When the operating frequency is 2.4 GHz",
+    },
+    {
+      question:
+        "Which of the following statements is true about the end devices in Zigbee protocol?",
+      options: [
+        "End devices do not participate in data routing",
+        "End device manages and controls the network",
+        "End devices contribute in data relaying",
+        "There can be only one end device in a Zigbee network",
+      ],
+      answer: "End devices do not participate in data routing",
+    },
+    {
+      question:
+        "What is the maximum packet size supported by IEEE 802.15.4 standard?",
+      options: ["1280 bytes", "125 bytes", "127 bytes", "256 bytes"],
+      answer: "127 bytes",
+    },
+    {
+      question: "Z-wave uses ___ network topology.",
+      options: ["Bus", "Star", "Tree", "Mesh"],
+      answer: "Mesh",
+    },
+    {
+      question:
+        "Passive tags in RFID are powered by their own power source. True or False?",
+      options: ["True", "False"],
+      answer: "False",
+    },
+    {
+      question: "What is the full form of IETF in the context of the Internet?",
+      options: [
+        "Internet Enforced Task Force",
+        "Internet for Engineers Task Force",
+        "Internet Engineers Task Force",
+        "Internet Engineering Task Force",
+      ],
+      answer: "Internet Engineering Task Force",
+    },
+    {
+      question: "MQTT works on ___ framework on top of TCP/IP.",
+      options: [
+        "Push/Pull",
+        "Publish/Subscribe",
+        "Client/Server",
+        "None of the above",
+      ],
+      answer: "Publish/Subscribe",
     },
   ],
   // <!-------------------------------------------- WEEK 2---------------------------------------------------------->
   "Week 2": [
     {
-      question:
-        "Which of the following is a key characteristic of the Fourth Industrial Revolution?",
+      question: "Which of the following is not a part of a smart product?",
       options: [
-        "Extensive use of steam engines",
-        "Evasion of corporate taxes",
-        "Widespread use of artificial intelligence",
-        "Introduction of assembly lines",
+        "Physical Components",
+        "Smart Components",
+        "Connectivity Components",
+        "Logistics Components",
       ],
-      answer: "Widespread use of artificial intelligence",
+      answer: "Logistics Components",
     },
     {
-      question: "Which of the following is not a physical megatrend?",
+      question: "Which of the following is true for Smart Products?",
       options: [
-        "Cloud Computing",
-        "3D Printer",
-        "Autonomous Vehicle",
-        "Advanced Robotics",
-      ],
-      answer: "Cloud Computing",
-    },
-    {
-      question:
-        "How does Industry 4.0 enhance sustainability in manufacturing industries?",
-      options: [
-        "By increasing manual labor",
-        "Through globalization and emerging technologies",
-        "By reducing the use of digital technologies",
-        "Focusing on traditional manufacturing methods",
-      ],
-      answer: "Through globalization and emerging technologies",
-    },
-    {
-      question:
-        "What is a crucial aspect of Supply Chain Management (SCM) in sustainable manufacturing?",
-      options: [
-        "Prioritizing high-cost production",
-        "Ignoring environmental concerns",
-        "Outsourcing without strategic planning",
-        "Considering environmental concerns such as climate change, contamination, and resource consumption",
+        "They are disconnected physical products",
+        "They are always virtual entities",
+        "They are physical products with sensing, processing and communicating capabilities",
+        "They have no real-world application",
       ],
       answer:
-        "Considering environmental concerns such as climate change, contamination, and resource consumption",
-    },
-    {
-      question: "What role does ICT play in the manufacturing industry?",
-      options: [
-        "Reducing communication within the enterprise",
-        "Serving as the main nervous system of any manufacturing industry",
-        "Discouraging the sharing of information between customer, producer, and supplier",
-        "Eliminating the need for enterprise resource planning",
-      ],
-      answer:
-        "Serving as the main nervous system of any manufacturing industry",
+        "They are physical products with sensing, processing and communicating capabilities",
     },
     {
       question:
-        "What characterizes an emerging market in the context of Industry 4.0?",
-      options: [
-        "Markets that are fully developed and static",
-        "Markets that meet the standards of newly developed innovative products",
-        "Markets that exclusively focus on traditional products",
-        "Markets that resist globalization",
-      ],
-      answer:
-        "Markets that meet the standards of newly developed innovative products",
-    },
-    {
-      question: "What is the primary focus of the Lean Production System?",
-      options: [
-        "Overworking the employees to boost production",
-        "Prioritizing customer needs",
-        "Increasing the price of products",
-        "Reducing technology use",
-      ],
-      answer: "Prioritizing customer needs",
+        "The __ layer provides interfaces and communication across the devices in IIoT architecture.",
+      options: ["Network", "Edge", "Perception", "Application"],
+      answer: "Network",
     },
     {
       question:
-        "Which among the following are aspects of socio-economic issues of sustainability in Industry 4.0?",
-      options: ["Social", "Economic", "Environmental", "All of the above"],
-      answer: "All of the above",
+        "Which among the following is not an application layer protocol in IIoT?",
+      options: ["MQTT", "COAP", "DDS", "IPv6"],
+      answer: "IPv6",
+    },
+    {
+      question: "Which among the following is a key challenge in IIoT?",
+      options: ["Automation", "Scalability", "Data Sharing", "Data Security"],
+      answer: "Data Security",
     },
     {
       question:
-        "Which company is credited for the development of Lean Production System?",
-      options: ["Siemens", "Toyota Motors", "Hitachi", "Microsoft"],
-      answer: "Toyota Motors",
+        "The open-source IIoT platform offered by Eclipse Foundation is known as:",
+      options: ["Predix", "Kaa", "Thingworx", "MindSphere"],
+      answer: "Kaa",
+    },
+    {
+      question: "Which protocol is used by COAP for message exchange?",
+      options: ["TCP", "UDP", "HTTP", "FTP"],
+      answer: "UDP",
     },
     {
       question:
-        "What is a major concern in implementing Lean Production in the context of Industry 4.0?",
+        "Which of the following is not a key feature of IIoT platforms?",
       options: [
-        "Reducing digital technology use",
-        "Integrating humans in plants",
-        "Ignoring customer feedback",
-        "Avoiding environmental considerations",
+        "Data Ingestion",
+        "Data Analytics",
+        "Device Management",
+        "High Latency",
       ],
-      answer: "Integrating humans in plants",
+      answer: "High Latency",
     },
     {
       question:
-        "Which of the following is not a benefit of smart and connected products?",
-      options: [
-        "Decreased environmental impact",
-        "Better usage of product",
-        "Rapid increment in the sale price of a product",
-        "Smart Supply Chain",
-      ],
-      answer: "Rapid increment in the sale price of a product",
+        "In MQTT protocol, which component is responsible for distributing messages?",
+      options: ["Client", "Broker", "Publisher", "Subscriber"],
+      answer: "Broker",
+    },
+    {
+      question: "Which company developed MindSphere as its IIoT platform?",
+      options: ["GE", "Siemens", "IBM", "Hitachi"],
+      answer: "Siemens",
     },
     {
       question:
-        "Which of the following is not a fundamental building block of a smart and connected business in the context of Industry 4.0?",
+        "Which of the following is true about the Perception Layer in IIoT?",
       options: [
-        "Blueprint of profits",
-        "Customer values",
-        "Key resources and processes",
-        "None of the above",
+        "It acts as the interface between sensors and actuators",
+        "It is responsible for user interaction",
+        "It is responsible for storage",
+        "It performs analytics",
       ],
-      answer: "Blueprint of profits",
+      answer: "It acts as the interface between sensors and actuators",
     },
     {
-      question: "What is a major advantage of smart factories?",
-      options: [
-        "Increased production costs",
-        "Reduced efficiency",
-        "Improvement in quality and safety",
-        "Limited product variety",
-      ],
-      answer: "Improvement in quality and safety",
-    },
-    {
-      question: "How is information technology utilized in smart factories?",
-      options: [
-        "For manual data processing",
-        "To avoid data analysis",
-        "For smart software applications and to control processes",
-        "To limit connectivity and communication",
-      ],
-      answer: "For smart software applications and to control processes",
+      question: "Which company developed the ThingWorx IIoT platform?",
+      options: ["PTC", "GE", "IBM", "Intel"],
+      answer: "PTC",
     },
     {
       question:
-        "Communication, trust and capital with respect to the created values play an important role in IIoT business model.",
-      options: ["False", "True"],
-      answer: "True",
+        "In IIoT, the communication between machines without human intervention is known as:",
+      options: ["M2H", "H2M", "M2M", "H2H"],
+      answer: "M2M",
+    },
+    {
+      question: "What is the role of the Edge Layer in IIoT architecture?",
+      options: [
+        "Data ingestion and pre-processing",
+        "End-user interface",
+        "Application analytics",
+        "Cloud orchestration",
+      ],
+      answer: "Data ingestion and pre-processing",
+    },
+    {
+      question: "Which of the following is not an IIoT platform?",
+      options: ["Predix", "ThingWorx", "Amazon Alexa", "Kaa"],
+      answer: "Amazon Alexa",
     },
   ],
-
   // <!-------------------------------------------- WEEK 3---------------------------------------------------------->
   "Week 3": [
     {
       question:
-        "Which of the following is not a feature of Cyber-Physical Systems?",
-      options: [
-        "Reactive Computation",
-        "Concurrency",
-        "Real-Time Computation",
-        "Standalone non-networked Computation",
-      ],
-      answer: "Standalone non-networked Computation",
+        "Which of the following is an example of a smart wearable device?",
+      options: ["Smartwatch", "Smart fridge", "Smart TV", "Smart fan"],
+      answer: "Smartwatch",
     },
     {
       question:
-        "In the context of CPS in Smart Grid, what is the full form of DAU?",
-      options: [
-        "Data Aggregation Unit",
-        "Data Analytic Unit",
-        "Distributed Augmented Universe",
-        "Dedicated Accounting Unit",
-      ],
-      answer: "Data Aggregation Unit",
+        "Which technology helps improve the accuracy and precision of positioning systems?",
+      options: ["Bluetooth", "GNSS", "Wi-Fi", "Ethernet"],
+      answer: "GNSS",
     },
     {
       question:
-        'Which of the following is not a component of CPS\'s "5C Architecture" for Industry 4.0?',
-      options: ["Connection", "Conversion", "Compatibility", "Cognition"],
-      answer: "Compatibility",
+        "In smart transportation, which of the following is used to detect the presence of vehicles?",
+      options: [
+        "Temperature sensor",
+        "Light sensor",
+        "Ultrasonic sensor",
+        "Inductive loop sensor",
+      ],
+      answer: "Inductive loop sensor",
+    },
+    {
+      question: 'What does the term "geofencing" refer to?',
+      options: [
+        "Virtual perimeter for a real-world geographic area",
+        "Fencing used in GPS devices",
+        "Physical GPS boundary",
+        "Network firewall for location services",
+      ],
+      answer: "Virtual perimeter for a real-world geographic area",
+    },
+    {
+      question: "Which of the following is a benefit of smart cities?",
+      options: [
+        "Reduced urban mobility",
+        "Increased energy consumption",
+        "Efficient resource utilization",
+        "Manual traffic management",
+      ],
+      answer: "Efficient resource utilization",
+    },
+    {
+      question: "Smart parking systems rely on which type of sensors?",
+      options: ["Accelerometer", "Ultrasonic", "Thermal", "Light"],
+      answer: "Ultrasonic",
     },
     {
       question:
-        "What are the key parts enabling collaboration productivity in Industry 4.0?",
-      options: [
-        "IT Proliferation, Single Source of Truth, Industrialization, Coordination",
-        "Financial Analysis, Market Research, Legal Compliance, Public Relations",
-        "Human Resources, Sales Targets, Customer Feedback, Advertising",
-        "Supply Chain Management, Quality Control, Cost Reduction, Branding",
-      ],
-      answer:
-        "IT Proliferation, Single Source of Truth, Industrialization, Coordination",
+        "Which protocol is primarily used for exchanging sensor data in smart buildings?",
+      options: ["SMTP", "BACnet", "FTP", "HTTP"],
+      answer: "BACnet",
     },
     {
-      question: "What does 'PLM' stand for in the context of Industry 4.0?",
+      question: "What is a major challenge for smart healthcare systems?",
       options: [
-        "Product Lifecycle Management",
-        "Public Liability Marketing",
-        "Professional Learning Modules",
-        "Personal Leadership Mastery",
+        "Data privacy and security",
+        "Wireless communication",
+        "Low power sensors",
+        "AI support",
       ],
-      answer: "Product Lifecycle Management",
-    },
-    {
-      question: "What does the Technique 'ABC' in PLM stand for?",
-      options: [
-        "Activity Based Costing",
-        "Advanced Business Computing",
-        "Analytical Business Concepts",
-        "Automated Banking Coordination",
-      ],
-      answer: "Activity Based Costing",
-    },
-    {
-      question: "In which fields are AR and VR used in Industry 4.0?",
-      options: [
-        "Cooking and nutrition",
-        "Fashion design only",
-        "Machining, production, and education",
-        "Network Security",
-      ],
-      answer: "Machining, production, and education",
+      answer: "Data privacy and security",
     },
     {
       question:
-        "Which among the following is one type of categorization of AR?",
+        "Which layer of the smart city architecture collects data from the physical environment?",
       options: [
-        "Marker-attached AR",
-        "Markerless AR",
-        "Null AR",
-        "Marker-like AR",
+        "Data processing layer",
+        "Application layer",
+        "Perception layer",
+        "Network layer",
       ],
-      answer: "Markerless AR",
+      answer: "Perception layer",
     },
     {
-      question: "Who first coined the term 'Augmented Reality'?",
-      options: ["Thamos Caudell", "Steve Jobs", "Elon Musk", "Mark Zuckerberg"],
-      answer: "Thamos Caudell",
-    },
-    {
-      question: "What type of AR uses visual markers for outcomes?",
+      question: "Which one of these is a smart agriculture application?",
       options: [
-        "Marker-based Augmented Reality",
-        "Markerless Augmented Reality",
-        "Projection Based Augmented Reality",
-        "Superimposition Based Augmented Reality",
+        "Soil moisture monitoring",
+        "Cloud gaming",
+        "e-Commerce",
+        "Digital library",
       ],
-      answer: "Marker-based Augmented Reality",
-    },
-    {
-      question: "What type of knowledge is used in AI techniques?",
-      options: [
-        "Only historical data",
-        "Only factual information",
-        "Procedural, declarative, and heuristic knowledge",
-        "Limited to scientific formulas",
-      ],
-      answer: "Procedural, declarative, and heuristic knowledge",
-    },
-    {
-      question: "What is the use of AI in IIoT?",
-      options: [
-        "No use in IIoT",
-        "Only for data storage",
-        "Machine safety, efficient product lifecycle, efficient manufacturing processes, and others",
-        "Limited to basic calculations",
-      ],
-      answer:
-        "Machine safety, efficient product lifecycle, efficient manufacturing processes, and others",
-    },
-    {
-      question: "Which of the following characterizes Big Data?",
-      options: [
-        "Limited to textual data only",
-        "Consists of structured and non-structured data",
-        "Only includes numerical data",
-        "Data that is always organized",
-      ],
-      answer: "Consists of structured and non-structured data",
-    },
-    {
-      question: "What does a distributed file system in Big Data ensure?",
-      options: [
-        "Inconsistency of data",
-        "Unreliable data storage",
-        "Consistency, accessibility, and fault tolerance of data",
-        "Limited data access",
-      ],
-      answer: "Consistency, accessibility, and fault tolerance of data",
+      answer: "Soil moisture monitoring",
     },
     {
       question:
-        "Suppose you write a program which uses an API to collect data continuously from Linkedin and Facebook. You then wish to analyze such data. What type of big data source are you using?",
+        "Which communication protocol is most suitable for real-time IoT applications in smart factories?",
+      options: ["MQTT", "CoAP", "DDS", "HTTP"],
+      answer: "DDS",
+    },
+    {
+      question:
+        "Which sensor is used to detect harmful gases in smart environments?",
       options: [
-        "Internal data source",
-        "External data source",
-        "Complimentary data source",
-        "All of the above",
+        "Temperature sensor",
+        "Gas sensor",
+        "Proximity sensor",
+        "Infrared sensor",
       ],
-      answer: "External data source",
+      answer: "Gas sensor",
+    },
+    {
+      question: "Which technology enables energy management in smart homes?",
+      options: ["Smart meters", "GPS", "CCTV", "NFC"],
+      answer: "Smart meters",
+    },
+    {
+      question:
+        "In a smart grid, what balances supply and demand in real-time?",
+      options: [
+        "Power meter",
+        "Control center",
+        "Load balancer",
+        "Smart inverter",
+      ],
+      answer: "Control center",
+    },
+    {
+      question:
+        "Which of the following is not a feature of smart manufacturing?",
+      options: [
+        "Predictive maintenance",
+        "Manual data entry",
+        "Automation",
+        "Real-time monitoring",
+      ],
+      answer: "Manual data entry",
     },
   ],
   // <!-------------------------------------------- WEEK 4---------------------------------------------------------->
   "Week 4": [
     {
-      question: "What does Cybersecurity protect?",
-      options: [
-        "Only physical infrastructure",
-        "Only software",
-        "Hardware, software, and data",
-        "Only company policies",
-      ],
-      answer: "Hardware, software, and data",
-    },
-    {
-      question: "What is the focus of Network Security?",
-      options: [
-        "Only securing physical buildings",
-        "Protecting network architecture from unauthorized access and improper use",
-        "Protecting only the company CEO's information",
-        "Solely focused on securing paper documents",
-      ],
-      answer:
-        "Protecting network architecture from unauthorized access and improper use",
-    },
-    {
-      question: "What does the CIA Triad in Cybersecurity stand for?",
-      options: [
-        "Confidentiality, Integrity, Availability",
-        "Costing, Integrity, Assets",
-        "Company, Internet, Availability",
-        "Communication, Information, Assessment",
-      ],
-      answer: "Confidentiality, Integrity, Availability",
+      question:
+        "Which of the following is an example of industrial safety equipment?",
+      options: ["Smart helmet", "Smartphone", "Smart bulb", "Smart TV"],
+      answer: "Smart helmet",
     },
     {
       question:
-        "What are the key differences between IIoT and traditional Automation?",
+        "What is the primary purpose of a vibration sensor in manufacturing?",
       options: [
-        "No significant differences",
-        "Ubiquitous sensing, advanced analytics, IT tools, and methodologies",
-        "Only in terms of cost",
-        "Limited to the type of machinery used",
+        "Measuring temperature",
+        "Detecting humidity",
+        "Monitoring equipment health",
+        "Controlling lights",
       ],
-      answer:
-        "Ubiquitous sensing, advanced analytics, IT tools, and methodologies",
+      answer: "Monitoring equipment health",
+    },
+    {
+      question: "Which of the following best describes predictive maintenance?",
+      options: [
+        "Fixing machines after they break",
+        "Periodic scheduled maintenance",
+        "Using data to anticipate equipment failure",
+        "Manual checking of equipment",
+      ],
+      answer: "Using data to anticipate equipment failure",
+    },
+    {
+      question: "What type of data does a temperature sensor collect?",
+      options: ["Speed", "Vibration", "Heat", "Humidity"],
+      answer: "Heat",
     },
     {
       question:
-        "What are the benefits of deploying sensors and actuators in IIoT?",
-      options: [
-        "Limited to academic purposes",
-        "To sell more software",
-        "To control, enhance, and optimize various functions",
-        "To reduce operational efficiency",
-      ],
-      answer: "To control, enhance, and optimize various functions",
+        "Which protocol is commonly used for communication in industrial automation?",
+      options: ["BACnet", "Modbus", "HTTP", "SMTP"],
+      answer: "Modbus",
     },
     {
-      question: "How does IIoT benefit the mining industry?",
+      question: "What does a PLC do in industrial settings?",
       options: [
-        "By relaxing safety standards",
-        "Increasing disaster risks",
-        "Early disaster warning",
-        "Ignoring carbon footprint metrics",
+        "Stores data in the cloud",
+        "Controls industrial processes",
+        "Measures air quality",
+        "Provides internet access",
       ],
-      answer: "Early disaster warning",
+      answer: "Controls industrial processes",
     },
     {
-      question: "What is the Third Wave in GE's industrial level innovation?",
-      options: [
-        "The Industrial Intranet",
-        "The Digital Revolution",
-        "The Industrial Revolution",
-        "The Industrial Internet",
-      ],
-      answer: "The Industrial Internet",
+      question: "Which one is an edge device in IIoT?",
+      options: ["Cloud server", "Mobile app", "Sensor node", "Data center"],
+      answer: "Sensor node",
     },
     {
       question:
-        "Scarcity of non-renewable sources of energy pose a significant challenge with respect to energy consumption for the future smart industries and industrial internet?",
-      options: ["True", "False"],
-      answer: "True",
+        "Which standard ensures interoperability between industrial automation devices?",
+      options: ["IEEE 1451", "OPC UA", "Zigbee", "LoRaWAN"],
+      answer: "OPC UA",
     },
     {
-      question: "What was the negative effect of the Industrial Revolution?",
+      question: "What is one advantage of edge computing in IIoT?",
       options: [
-        "Increased life expectancy",
-        "Environmental pollution",
-        "Rise in literacy",
-        "Technological advancement",
+        "High latency",
+        "Local data processing",
+        "Less security",
+        "Dependence on the cloud",
       ],
-      answer: "Environmental pollution",
-    },
-    {
-      question:
-        "Which of the following is not one of the three key elements of the Industrial Internet?",
-      options: [
-        "Intelligent machines",
-        "Advanced analytics",
-        "People at work",
-        "Social Networking",
-      ],
-      answer: "Social Networking",
+      answer: "Local data processing",
     },
     {
       question:
-        "How is a smart sensor defined according to IEEE 1451 standard?",
-      options: [
-        "Sensor with large storage capacity",
-        "Sensor with standardized physical connection for communication",
-        "Sensor that operates independently",
-        "Sensor without the need for a power supply",
-      ],
-      answer: "Sensor with standardized physical connection for communication",
-    },
-    {
-      question: "What is the purpose of the MRAA library in Intel IoT devices?",
-      options: [
-        "High-level gaming interface",
-        "Large data analysis",
-        "Cloud storage management",
-        "Low-level communication in GNU/Linux platform",
-      ],
-      answer: "Low-level communication in GNU/Linux platform",
+        "Which component is responsible for data collection in IIoT systems?",
+      options: ["Actuator", "Sensor", "Display", "Monitor"],
+      answer: "Sensor",
     },
     {
       question:
-        "What is a key aspect of the design philosophy for IIoT in industrial processes?",
-      options: [
-        "Facilitating communication between heterogeneous objects",
-        "Prioritizing manual control over automated systems",
-        "Limiting data interoperability",
-        "Reducing smart object autonomy",
-      ],
-      answer: "Facilitating communication between heterogeneous objects",
+        "Which industrial protocol supports both serial and Ethernet communication?",
+      options: ["OPC UA", "MQTT", "Modbus", "HTTP"],
+      answer: "Modbus",
     },
     {
       question:
-        "What is a feature of the Autonomous Pull Economy in Industrial Process 4.0?",
+        "Which of the following is a component of predictive maintenance?",
       options: [
-        "High waste generation",
-        "Manual data processing",
-        "Limited resource optimization",
-        "End-to-end automation facility",
+        "Augmented reality",
+        "Data analytics",
+        "RFID tag",
+        "Barcode scanner",
       ],
-      answer: "End-to-end automation facility",
+      answer: "Data analytics",
     },
     {
       question:
-        "Considering the future architecture of the smart Industrial plant, which among the following layers is responsible for autonomous decision making, machine learning and decision support system?",
+        "Which of these is used for condition monitoring of rotating machines?",
       options: [
-        "Connection Layer",
-        "Conversion Layer",
-        "Cyber Layer",
-        "Cognition Layer",
+        "Humidity sensor",
+        "Pressure sensor",
+        "Vibration sensor",
+        "Light sensor",
       ],
-      answer: "Cognition Layer",
+      answer: "Vibration sensor",
+    },
+    {
+      question:
+        "What type of system allows human operators to interact with industrial processes?",
+      options: ["PLC", "SCADA", "RTU", "HMI"],
+      answer: "HMI",
+    },
+    {
+      question:
+        "Which technology is crucial for analyzing data from industrial machines?",
+      options: ["Cloud storage", "Data analytics", "Wi-Fi", "Firewall"],
+      answer: "Data analytics",
     },
   ],
   // <!----------------------------------------------------- WEEK 5---------------------------------------------------------->
   "Week 5": [
     {
       question:
-        "What is a key technology driver in Amazon's Smart Warehousing?",
+        "Which technology is commonly used in smart farming for real-time data collection?",
+      options: ["NFC", "RFID", "LPWAN", "Bluetooth"],
+      answer: "LPWAN",
+    },
+    {
+      question: "Which type of drone is used in precision agriculture?",
       options: [
-        "Warehouse Automation",
-        "Drone Delivery",
-        "Cryptocurrency Payments",
-        "3D Printing",
+        "Delivery drone",
+        "Surveillance drone",
+        "Agricultural drone",
+        "Entertainment drone",
       ],
-      answer: "Warehouse Automation",
+      answer: "Agricultural drone",
     },
     {
       question:
-        "Which of the following is not covered under the domain of Industry 4.0?",
+        "Which of the following helps in water conservation in agriculture?",
       options: [
-        "Intelligent manufacturing",
-        "Smart warehousing",
-        "Smart logistics",
-        "Rapid deforestation",
+        "Pest control",
+        "Irrigation management systems",
+        "Fertilizer application",
+        "Seed optimization",
       ],
-      answer: "Rapid deforestation",
+      answer: "Irrigation management systems",
     },
     {
-      question: "Which of the following IIoT platforms is used by Hitachi?",
-      options: ["Unify Twin", "Lumada", "Insights Hub", "RootCloud"],
-      answer: "Lumada",
+      question: "Which sensor is used for detecting soil moisture?",
+      options: [
+        "Gas sensor",
+        "Humidity sensor",
+        "Moisture sensor",
+        "Optical sensor",
+      ],
+      answer: "Moisture sensor",
+    },
+    {
+      question: "What is the benefit of using sensors in smart farming?",
+      options: [
+        "Increased fuel use",
+        "Reduced accuracy",
+        "Efficient resource utilization",
+        "Decreased yields",
+      ],
+      answer: "Efficient resource utilization",
     },
     {
       question:
-        "Which of the following is not a type of business model for IoT?",
-      options: [
-        "Subscription Model",
-        "Outcome-Based Model",
-        "Asset-Sharing Model",
-        "Loss-Sharing Model",
-      ],
-      answer: "Loss-Sharing Model",
+        "Which wireless communication method is suitable for transmitting data over long distances in smart agriculture?",
+      options: ["Wi-Fi", "LoRa", "Zigbee", "Bluetooth"],
+      answer: "LoRa",
     },
     {
-      question: "Which is an advantage of the Subscription Model in IoT?",
+      question: "Which of the following is not a feature of smart agriculture?",
       options: [
-        "Predictable recurring revenue",
-        "High initial costs",
-        "Limited customer interaction",
-        "Single revenue stream",
+        "Real-time monitoring",
+        "Manual data recording",
+        "Automated irrigation",
+        "Pest detection",
       ],
-      answer: "Predictable recurring revenue",
-    },
-    {
-      question: "Which is a critical challenge of the IoT-as-a-Service model?",
-      options: [
-        "Limited product applicability",
-        "Over-dependence on manual processes",
-        "Security of data",
-        "Reduced licensing costs",
-      ],
-      answer: "Security of data",
+      answer: "Manual data recording",
     },
     {
       question:
-        "Which of the following is NOT offered by a Service-Oriented IIoT Business Model?",
-      options: [
-        "CapEx-focused investment strategies",
-        "Aggregation and analysis of data",
-        "On-demand services backed by cloud-based Business Models",
-        "Self-service interface",
-      ],
-      answer: "CapEx-focused investment strategies",
+        "Which of the following is used to measure plant health in smart agriculture?",
+      options: ["NDVI", "RFID", "MQTT", "OPC UA"],
+      answer: "NDVI",
     },
     {
-      question: "Process Oriented Business Model is a ___ business model?",
-      options: ["Static", "Actuating", "Hybrid", "Defunct"],
-      answer: "Hybrid",
-    },
-    {
-      question: "What is IIRA?",
+      question: "What does NDVI stand for?",
       options: [
-        "A standard architecture for IIoT Systems",
-        "A scheme for corporate tax rebate",
-        "A package for installing IIoT Software",
-        "An internship program for IoT enthusiasts",
+        "Normalized Difference Vegetation Index",
+        "National Digital Vegetation Indicator",
+        "New Drone Visualization Interface",
+        "Non-Digital Value Index",
       ],
-      answer: "A standard architecture for IIoT Systems",
-    },
-    {
-      question: "Which of the following statements is incorrect about IIRA?",
-      options: [
-        "Safety is not a concern in the IIRA infrastructure",
-        "The IIRA infrastructure allows interoperability",
-        "The IIRA infrastructure is proposed by the IIC Technology Working Group",
-        "The IIRA infrastructure maps application technologies",
-      ],
-      answer: "Safety is not a concern in the IIRA infrastructure",
+      answer: "Normalized Difference Vegetation Index",
     },
     {
       question:
-        "Which of the following is not a component of the three-tier architecture pattern of IIRA?",
-      options: [
-        "Edge layer",
-        "Fog layer",
-        "Platform layer",
-        "Enterprise layer",
-      ],
-      answer: "Fog layer",
+        "Which protocol is commonly used for sensor communication in agriculture IoT systems?",
+      options: ["HTTP", "MQTT", "FTP", "SMTP"],
+      answer: "MQTT",
     },
     {
-      question: "What are the IIRA Viewpoints?",
+      question: "Which of the following is not a benefit of smart agriculture?",
       options: [
-        "Mining, Smelting, Forging and Casting",
-        "User, Demand, Production and Supply",
-        "Analysis, Management, Manipulation and Modification",
-        "Business, Usage, Functional and Implementation",
+        "Increased productivity",
+        "Water wastage",
+        "Disease detection",
+        "Efficient fertilizer use",
       ],
-      answer: "Business, Usage, Functional and Implementation",
+      answer: "Water wastage",
     },
     {
-      question: "The elements of an activity in IIRA are__",
+      question: "Which technology is used for remote field monitoring?",
       options: [
-        "Controls, Events, Feedback, and Termination",
-        "Cause and Effect",
-        "Trigger, Workflow, Effect, and Constraints",
-        "Planning, Projection, Execution, and Feedback",
+        "GPS",
+        "Camera sensors",
+        "All of the above",
+        "None of the above",
       ],
-      answer: "Trigger, Workflow, Effect, and Constraints",
+      answer: "All of the above",
     },
     {
       question:
-        "In the Business Viewpoint of IIRA, what are fundamental capabilities?",
+        "Which of the following helps optimize fertilizer usage in smart agriculture?",
       options: [
-        "High-level specifications essential for business tasks",
-        "Detailed technical standards",
-        "Financial goals",
-        "Marketing strategies",
+        "Weather forecasting",
+        "Soil nutrient sensors",
+        "Drone delivery",
+        "Automated harvesting",
       ],
-      answer: "High-level specifications essential for business tasks",
+      answer: "Soil nutrient sensors",
     },
     {
       question:
-        "With respect to the IIRA functional domain, industrial actuation falls under which of the following domains?",
+        "Which component is essential for remote sensing in agriculture?",
       options: [
-        "Operations Domain",
-        "Business Domain",
-        "Control Domain",
-        "Application Domain",
+        "Cloud computing",
+        "Mobile apps",
+        "Satellites",
+        "Bluetooth speakers",
       ],
-      answer: "Control Domain",
+      answer: "Satellites",
+    },
+    {
+      question: "What is the role of AI in smart agriculture?",
+      options: [
+        "Disrupts traditional farming",
+        "Improves decision-making through data analysis",
+        "Replaces water sources",
+        "Generates electricity",
+      ],
+      answer: "Improves decision-making through data analysis",
     },
   ],
   // <!-------------------------------------------- WEEK 6---------------------------------------------------------->
   "Week 6": [
     {
       question:
-        "Which of the following temperature sensors generates an analog voltage proportional to the temperature?",
-      options: ["DS1621", "DHT11", "DS18B20", "LM 35"],
-      answer: "LM 35",
+        "Which component is responsible for regulating temperature in HVAC systems?",
+      options: ["Compressor", "Thermostat", "Sensor", "Evaporator"],
+      answer: "Thermostat",
     },
     {
-      question: "What are the key components of an IoT Sensing Device?",
+      question: "What does HVAC stand for?",
       options: [
-        "Sensor, Processor, Wireless Communication Module, Power Management Unit",
-        "Battery, Processor, Universal Serial Bus, Visual Display Unit",
-        "Sensor, Compiler, Interpreter, Energy Harvester",
-        "None of the above",
+        "Heat Ventilation and Coil",
+        "Heat and Voltage Control",
+        "Heating, Ventilation and Air Conditioning",
+        "High Voltage Air Controller",
       ],
-      answer:
-        "Sensor, Processor, Wireless Communication Module, Power Management Unit",
-    },
-    {
-      question: "What kind of sensor is ADXL335?",
-      options: [
-        "Accelerometer",
-        "Gyroscope",
-        "Magnetometer",
-        "Proximity sensor",
-      ],
-      answer: "Accelerometer",
+      answer: "Heating, Ventilation and Air Conditioning",
     },
     {
       question:
-        '"MOS gas sensor depend on the thermal energy for its operation which is supplied with a heater." State True or False.',
-      options: ["True", "False"],
-      answer: "True",
+        "Which sensor is most appropriate for detecting room occupancy?",
+      options: ["Gas sensor", "PIR sensor", "Thermal sensor", "Optical sensor"],
+      answer: "PIR sensor",
+    },
+    {
+      question: "What is a common protocol used for HVAC system communication?",
+      options: ["Zigbee", "Modbus", "NFC", "BLE"],
+      answer: "Modbus",
     },
     {
       question:
-        "Which of the following is not a probable application of Gas Sensors?",
+        "Which of the following is not a benefit of smart HVAC systems?",
       options: [
-        "Air quality monitoring",
-        "Leakage Detection of Toxic gases",
-        "Alcohol Breath Test",
-        "Motion Tracking",
+        "Energy efficiency",
+        "Improved air quality",
+        "Manual operation",
+        "Remote control",
       ],
-      answer: "Motion Tracking",
+      answer: "Manual operation",
     },
     {
-      question: "What is meant by the Sensitivity of a Gas Sensor?",
+      question: "What role does IoT play in modern HVAC systems?",
       options: [
-        "Change in the output signal for a unit change in gas concentration",
-        "Ability to detect a particular gas in a mixture of different gases",
-        "Ability to provide consistent output over a long period of time",
-        "The time taken by the sensor to stabilize its response",
+        "Reduces connectivity",
+        "Increases manual work",
+        "Enables remote monitoring and control",
+        "Removes sensor functionality",
       ],
-      answer:
-        "Change in the output signal for a unit change in gas concentration",
+      answer: "Enables remote monitoring and control",
+    },
+    {
+      question: "Which of the following is a parameter monitored in HVAC?",
+      options: ["Soil moisture", "CO2 level", "UV radiation", "Magnetic field"],
+      answer: "CO2 level",
     },
     {
       question:
-        "The ModBus-TCP protocol defines two units in the data frame. One of them is Protocol DataUnit. What is the other one?",
-      options: [
-        "Analogous Data Unit",
-        "Advanced Data Unit",
-        "Application Data Unit",
-        "None of the above",
-      ],
-      answer: "Application Data Unit",
+        "Which device collects data and sends it to the cloud in smart HVAC systems?",
+      options: ["Relay", "Sensor hub", "Actuator", "Modem"],
+      answer: "Sensor hub",
+    },
+    {
+      question: "Which of the following is used for temperature sensing?",
+      options: ["DHT11", "LDR", "MQ-2", "HC-SR04"],
+      answer: "DHT11",
     },
     {
       question:
-        "A camera which can simultaneously sense the ambient temperature as well as capture live video recordings is a type of ___sensor.",
-      options: ["Scalar", "Multimedia", "Hybrid", "All of the above"],
-      answer: "Hybrid",
+        "Which standard communication protocol allows multi-vendor HVAC devices to operate together?",
+      options: ["BACnet", "USB", "SMTP", "HTTPS"],
+      answer: "BACnet",
+    },
+    {
+      question: "What is a primary challenge in deploying smart HVAC systems?",
+      options: [
+        "Wireless connectivity",
+        "Cost",
+        "Cloud storage",
+        "User training",
+      ],
+      answer: "Cost",
+    },
+    {
+      question: "Which sensor is used to detect humidity?",
+      options: ["LDR", "DHT11", "IR", "PIR"],
+      answer: "DHT11",
+    },
+    {
+      question: "Which of the following can control the compressor in HVAC?",
+      options: ["Actuator", "Modbus", "MQTT", "Firewall"],
+      answer: "Actuator",
+    },
+    {
+      question: "What is the function of a relay in smart HVAC?",
+      options: [
+        "Data analysis",
+        "System cooling",
+        "Switching devices on/off",
+        "Transmitting data",
+      ],
+      answer: "Switching devices on/off",
     },
     {
       question:
-        "EtherNet/IP defines two primary types of communications. What are those?",
-      options: [
-        "Explicit and Implicit",
-        "Internal and External",
-        "Inbound and Outbound",
-        "Telemetric and Geometric",
-      ],
-      answer: "Explicit and Implicit",
-    },
-    {
-      question:
-        "Which of the following statements is incorrect about Profinet?",
-      options: [
-        "Profinet is the standard for industrial Ethernet",
-        "Profinet is based upon Ethernet/IP",
-        "Profinet can not be used for process control or process measurement",
-        "Profinet uses NRT, RT and IRT communication channels",
-      ],
-      answer:
-        "Profinet can not be used for process control or process measurement",
-    },
-    {
-      question:
-        "Modbus-RTU is a serial protocol that follows the__ architecture.",
-      options: [
-        "Producer/Consumer",
-        "Master/Slave",
-        "Scalar/Vector",
-        "None of the above",
-      ],
-      answer: "Master/Slave",
-    },
-    {
-      question:
-        "Which of the following network topologies is used by Profibus?",
-      options: [
-        "Ring Topology",
-        "Bus Topology",
-        "Mesh Topology",
-        "Star Topology",
-      ],
-      answer: "Bus Topology",
-    },
-    {
-      question: "In the context of DeviceNet, CAN is the acronym for___",
-      options: [
-        "Cognitive Adaptable Network",
-        "Campus Area Network",
-        "Controller Area Network",
-        "Captive Area Network",
-      ],
-      answer: "Controller Area Network",
-    },
-    {
-      question: "How shorter TTL is achieved in URLLC?",
-      options: [
-        "By using smaller slot length",
-        "By reducing Orthogonal Frequency Division Multiplexing symbols in TTL",
-        "Reducing symbol duration",
-        "All of the above",
-      ],
-      answer: "All of the above",
-    },
-    {
-      question: "What is the frequency spectrum of mmWave Communication?",
-      options: ["30-300 MHz", "550-1720 KHz", "88-108 MHz", "30-300 GHz"],
-      answer: "30-300 GHz",
+        "Which wireless communication method is suitable for HVAC in buildings?",
+      options: ["LoRa", "Zigbee", "RFID", "NFC"],
+      answer: "Zigbee",
     },
   ],
   // <!-------------------------------------------- WEEK 7---------------------------------------------------------->
   "Week 7": [
     {
-      question: "Which of the following stands for LP in LPWAN?",
-      options: ["Large Power", "Light Power", "Low Power", "Long Range"],
-      answer: "Low Power",
+      question:
+        "Which of the following technologies is used for automatic lighting control in smart buildings?",
+      options: ["Wi-Fi", "Zigbee", "NFC", "Infrared"],
+      answer: "Zigbee",
     },
     {
       question:
-        "We need to pay a license fee to use LoRa in the 868 MHz radio frequency band in Europe. State True or False.",
-      options: ["True", "False"],
-      answer: "False",
+        "Which of these sensors is commonly used for smart lighting systems?",
+      options: ["PIR sensor", "Gas sensor", "Sound sensor", "Rain sensor"],
+      answer: "PIR sensor",
     },
     {
-      question:
-        "Which of the following is true about the SIGFOX network in terms of messages and payload?",
+      question: "Which of the following is a benefit of smart lighting?",
       options: [
-        "Up to 50 messages per day with a payload of 8 bytes per message",
-        "Up to 75 messages per day with a payload of 10 bytes per message",
-        "Up to 140 messages per day with a payload of 12 bytes per message",
-        "Up to 200 messages per day with a payload of 15 bytes per message",
+        "Manual control",
+        "Energy efficiency",
+        "Over-illumination",
+        "Fixed schedules",
       ],
-      answer:
-        "Up to 140 messages per day with a payload of 12 bytes per message",
+      answer: "Energy efficiency",
     },
     {
       question:
-        "Which library (header file) is used for interfacing the DHT22 sensor as demonstrated in the Hands On Industrial Environment Monitoring project?",
-      options: ["DHT.h", "DHT22.h", "DHT11.h", "Adafruit_DHT.h"],
-      answer: "Adafruit_DHT.h",
+        "Which protocol is widely used for lighting control in commercial buildings?",
+      options: ["BACnet", "Modbus", "DALI", "HTTP"],
+      answer: "DALI",
     },
     {
-      question: "Which of the following topologies are supported by Zigbee?",
+      question: "Which type of sensor detects light levels in smart buildings?",
+      options: ["LDR", "Ultrasonic", "Thermal", "PIR"],
+      answer: "LDR",
+    },
+    {
+      question:
+        "Which smart lighting feature adjusts brightness based on ambient light?",
       options: [
-        "Point-to-Point and Star",
-        "Bus and Ring",
-        "Tree, and Mesh",
-        "Ring and Mesh",
+        "Motion sensing",
+        "Daylight harvesting",
+        "Color tuning",
+        "Scheduling",
       ],
-      answer: "Tree, and Mesh",
+      answer: "Daylight harvesting",
     },
     {
-      question:
-        "The physical and MAC layers of the Zigbee communication protocol is based on___",
-      options: ["IEEE 802.11", "IEEE 802.15.4", "IEEE 802.3", "IEEE 802.16"],
-      answer: "IEEE 802.15.4",
-    },
-    {
-      question:
-        "Xbee is a mesh communication protocol based on the IEEE 802.15.4 whereas Zigbee is the product that uses the Xbee communication protocol for radio communication. State true or false.",
-      options: ["True", "False"],
-      answer: "True",
-    },
-    {
-      question:
-        "Which of the following functions is performed by the coordinator node in a Zigbee network?",
+      question: "What does DALI stand for?",
       options: [
-        "Data relay",
-        "End device connector",
-        "Acts as the root of the network and bridge between different networks",
-        "Control plane",
+        "Digital Addressable Lighting Interface",
+        "Dynamic Automated Light Integration",
+        "Digital Analog Light Interface",
+        "Dual Access Light Indicator",
       ],
-      answer:
-        "Acts as the root of the network and bridge between different networks",
+      answer: "Digital Addressable Lighting Interface",
     },
     {
       question:
-        "Which of the following is/are the data characteristics of IIoT processing?",
+        "Which of the following is not a benefit of smart lighting systems?",
       options: [
-        "Polymorphism",
-        "Temporal relationships in data",
-        "Correlation in space, time, and other dimensions",
-        "All of the above",
+        "Improved comfort",
+        "Remote control",
+        "Excessive energy usage",
+        "Automation",
       ],
-      answer: "All of the above",
+      answer: "Excessive energy usage",
     },
     {
-      question: "Which of the following is false about the rule-based engine?",
+      question: "What is a typical use of motion sensors in smart buildings?",
       options: [
-        "Extract causal and temporal patterns using predefined rules",
-        "Handles multiple data streams and correlates them to provide meaningful output",
-        "Cannot process data in near real-time",
-        "Performs decision-making processes based on predefined rules",
+        "To increase humidity",
+        "To control ventilation",
+        "To switch lights ON/OFF",
+        "To manage internet speed",
       ],
-      answer: "Cannot process data in near real-time",
-    },
-    {
-      question:
-        "Which of the following represents the limitation of current CEP systems?",
-      options: [
-        "Manual threshold specification",
-        "Run-time update of threshold not possible",
-        "Not context-aware",
-        "All of the above",
-      ],
-      answer: "All of the above",
+      answer: "To switch lights ON/OFF",
     },
     {
       question:
-        "Which of the following options is false about the services rendered by the Smart Water Management System?",
+        "Which of the following is used for wireless lighting control in homes?",
+      options: ["Ethernet", "Zigbee", "RFID", "SCADA"],
+      answer: "Zigbee",
+    },
+    {
+      question: "Which cloud service enables remote lighting control?",
+      options: ["Google Drive", "Amazon Alexa", "OneDrive", "Dropbox"],
+      answer: "Amazon Alexa",
+    },
+    {
+      question: "Which lighting method adapts to user behavior and presence?",
       options: [
-        "Entirely non-replicable services",
-        "Fully customizable services",
-        "Application-specific services",
-        "Entirely replicable services",
+        "Scheduled lighting",
+        "Smart adaptive lighting",
+        "Manual switch",
+        "Centralized dimming",
       ],
-      answer: "Entirely non-replicable services",
+      answer: "Smart adaptive lighting",
+    },
+    {
+      question: "Which of the following is NOT a lighting control strategy?",
+      options: [
+        "Time scheduling",
+        "Occupancy sensing",
+        "Loudness detection",
+        "Daylight harvesting",
+      ],
+      answer: "Loudness detection",
     },
     {
       question:
-        "iRobot-Factory is a cognitive manufacturing factory which applies cognitive intelligence and edge computing for improved manufacturing. State true or false.",
-      options: ["True", "False"],
-      answer: "True",
+        "Which of the following improves security in smart homes using lighting?",
+      options: [
+        "Automatic locking",
+        "Presence simulation",
+        "Temperature control",
+        "Sound sensing",
+      ],
+      answer: "Presence simulation",
     },
     {
       question:
-        "Which of the following is false about the design of the SmartSantander?",
-      options: [
-        "Heterogeneity",
-        "Reliability",
-        "Mobility",
-        "Unrealistic experimentation",
-      ],
-      answer: "Unrealistic experimentation",
-    },
-    {
-      question:
-        "Which of the following represents a type of Industrial Control System?",
-      options: [
-        "Programmable Logic Compiler",
-        "Decentralized Control Suite",
-        "Supervisory Control and Data Acquisition",
-        "Distributed Compiled System",
-      ],
-      answer: "Supervisory Control and Data Acquisition",
+        "Which sensor is useful in smart restrooms for automatic lighting?",
+      options: ["Gas sensor", "PIR sensor", "Smoke detector", "Light sensor"],
+      answer: "PIR sensor",
     },
   ],
   // <!-------------------------------------------- WEEK 8---------------------------------------------------------->
   "Week 8": [
     {
-      question: "What does the acronym SCADA stand for?",
-      options: [
-        "Systematic Control and Digital Actuation",
-        "Supervisory Control and Data Acquisition",
-        "Smart Control and Device Allocation",
-        "Synchronized Control and Data Access",
-      ],
-      answer: "Supervisory Control and Data Acquisition",
-    },
-    {
-      question: "What is the main purpose of a PLC in an industrial system?",
-      options: [
-        "Data visualization",
-        "Cloud storage",
-        "Industrial automation and control",
-        "Energy distribution",
-      ],
-      answer: "Industrial automation and control",
-    },
-    {
-      question: "Which of the following is a key feature of OPC UA?",
-      options: [
-        "Only compatible with Windows OS",
-        "No support for complex data modeling",
-        "Cross-platform communication and enhanced security",
-        "Limited to analog sensors",
-      ],
-      answer: "Cross-platform communication and enhanced security",
+      question: "Which type of waste bin uses sensors to detect fill level?",
+      options: ["Manual bin", "Smart bin", "Garbage bin", "Recyclable bin"],
+      answer: "Smart bin",
     },
     {
       question:
-        "Which type of maintenance strategy involves performing maintenance only after equipment failure?",
+        "Which of the following sensors is used for water quality monitoring?",
       options: [
-        "Preventive Maintenance",
-        "Predictive Maintenance",
-        "Reactive Maintenance",
-        "Condition-Based Maintenance",
+        "Gas sensor",
+        "Turbidity sensor",
+        "PIR sensor",
+        "Pressure sensor",
       ],
-      answer: "Reactive Maintenance",
+      answer: "Turbidity sensor",
+    },
+    {
+      question: "What is the role of a smart meter in smart grids?",
+      options: [
+        "Reduce power consumption",
+        "Monitor energy usage and transmit data",
+        "Generate power",
+        "Provide customer feedback",
+      ],
+      answer: "Monitor energy usage and transmit data",
+    },
+    {
+      question: "Which protocol is most suitable for smart energy meters?",
+      options: ["MQTT", "Zigbee", "HTTP", "LoRa"],
+      answer: "Zigbee",
+    },
+    {
+      question: "Which of the following is a renewable energy source?",
+      options: ["Coal", "Oil", "Wind", "Gas"],
+      answer: "Wind",
+    },
+    {
+      question: "Which parameter is measured by a flow sensor?",
+      options: ["Temperature", "Pressure", "Flow rate", "Humidity"],
+      answer: "Flow rate",
     },
     {
       question:
-        "Which sensor type is most suitable for monitoring the rotation of a shaft?",
-      options: [
-        "Thermal sensor",
-        "Proximity sensor",
-        "Vibration sensor",
-        "Rotary encoder",
-      ],
-      answer: "Rotary encoder",
+        "Which of these is a component of a smart water management system?",
+      options: ["Flow sensor", "Smart plug", "Soil sensor", "Relay"],
+      answer: "Flow sensor",
     },
     {
-      question: "What role does MQTT play in IIoT?",
+      question: "What is the primary benefit of smart energy systems?",
       options: [
-        "A hardware protocol",
-        "Sensor calibration",
-        "A lightweight messaging protocol for small sensors and mobile devices",
-        "Data encryption standard",
+        "Higher consumption",
+        "Efficient energy use",
+        "Manual metering",
+        "Cost increase",
       ],
-      answer:
-        "A lightweight messaging protocol for small sensors and mobile devices",
+      answer: "Efficient energy use",
     },
     {
       question:
-        "Which of the following is a benefit of predictive maintenance?",
+        "Which of the following is a key challenge in smart waste management?",
       options: [
-        "Increased downtime",
-        "Unplanned equipment failure",
-        "Reduced maintenance cost and downtime",
-        "Manual system checks",
+        "Over-monitoring",
+        "Low sensor cost",
+        "Connectivity",
+        "Excess manpower",
       ],
-      answer: "Reduced maintenance cost and downtime",
+      answer: "Connectivity",
     },
     {
       question:
-        "Which communication protocol is commonly used in field-level industrial automation?",
-      options: ["HTTP", "SNMP", "Profibus", "SMTP"],
-      answer: "Profibus",
+        "Which cloud service model is often used in smart utility management?",
+      options: ["IaaS", "SaaS", "PaaS", "CaaS"],
+      answer: "SaaS",
     },
     {
-      question: "What kind of signal does a thermocouple produce?",
+      question: "Which of these is not a use case of smart utility systems?",
       options: [
-        "Digital signal",
-        "RF signal",
-        "Voltage signal",
-        "Current signal",
+        "Smart metering",
+        "Remote monitoring",
+        "Manual billing",
+        "Data analytics",
       ],
-      answer: "Voltage signal",
+      answer: "Manual billing",
     },
     {
-      question: "Which of the following describes edge computing?",
-      options: [
-        "Data storage at central servers only",
-        "Processing data at the edge of the network before sending to cloud",
-        "Using outdated hardware for processing",
-        "Manual configuration of data pipelines",
-      ],
-      answer:
-        "Processing data at the edge of the network before sending to cloud",
-    },
-    {
-      question: "Which element is not a component of a typical SCADA system?",
-      options: [
-        "Human Machine Interface (HMI)",
-        "Programmable Logic Controller (PLC)",
-        "Remote Terminal Unit (RTU)",
-        "Search Engine Optimization (SEO)",
-      ],
-      answer: "Search Engine Optimization (SEO)",
-    },
-    {
-      question: "Which of the following is NOT an advantage of SCADA systems?",
-      options: [
-        "Real-time data acquisition",
-        "Enhanced decision-making",
-        "Increased labor-intensive operations",
-        "Remote control and monitoring",
-      ],
-      answer: "Increased labor-intensive operations",
+      question: "Which device is used for automatic billing in smart grids?",
+      options: ["Sensor node", "Smart meter", "Power controller", "RTU"],
+      answer: "Smart meter",
     },
     {
       question:
-        "Which of the following IIoT devices primarily measures physical vibration in machines?",
+        "Which of the following is used for detecting leaks in pipelines?",
       options: [
-        "Thermistor",
-        "Accelerometer",
+        "PIR sensor",
+        "Gas sensor",
         "Ultrasonic sensor",
-        "Gyroscope",
+        "Thermal sensor",
       ],
-      answer: "Accelerometer",
-    },
-    {
-      question: "What is the full form of HART in industrial communication?",
-      options: [
-        "High Accuracy Remote Telemetry",
-        "Highway Addressable Remote Transducer",
-        "Highly Accessible Routing Transport",
-        "Hardware And Routing Technology",
-      ],
-      answer: "Highway Addressable Remote Transducer",
+      answer: "Ultrasonic sensor",
     },
     {
       question:
-        "Which technology combines machine learning and automation to predict equipment failures?",
+        "What is one key function of a SCADA system in smart utilities?",
       options: [
-        "Digital Twin",
-        "Predictive Analytics",
-        "Reactive Monitoring",
-        "Periodic Testing",
+        "Manual operations",
+        "Customer billing",
+        "Supervisory control and data acquisition",
+        "Remote entertainment",
       ],
-      answer: "Predictive Analytics",
+      answer: "Supervisory control and data acquisition",
+    },
+    {
+      question: "Which of the following is a goal of smart city utilities?",
+      options: [
+        "More pollution",
+        "Less connectivity",
+        "Better resource management",
+        "Manual monitoring",
+      ],
+      answer: "Better resource management",
     },
   ],
   // <!-------------------------------------------- WEEK 9---------------------------------------------------------->
   "Week 9": [
     {
       question:
-        "Which of the following is NOT a component of the Industrial Internet Reference Architecture (IIRA)?",
+        "Which of the following technologies is commonly used in vehicle tracking systems?",
+      options: ["Wi-Fi", "Zigbee", "GPS", "NFC"],
+      answer: "GPS",
+    },
+    {
+      question: "What type of sensor is used to detect tire pressure?",
+      options: ["Accelerometer", "TPMS", "Thermistor", "Proximity sensor"],
+      answer: "TPMS",
+    },
+    {
+      question: "Which of the following is a benefit of smart transportation?",
       options: [
-        "Business Viewpoint",
-        "Usage Viewpoint",
-        "Data Viewpoint",
-        "Functional Viewpoint",
+        "Manual traffic control",
+        "Increased fuel usage",
+        "Reduced travel time",
+        "More congestion",
       ],
-      answer: "Data Viewpoint",
+      answer: "Reduced travel time",
     },
     {
-      question:
-        "Which layer in the IIoT reference architecture is responsible for interfacing with physical devices?",
+      question: "Which device collects vehicle data for telematics?",
+      options: ["OBD-II", "NFC reader", "Barcode scanner", "Smart watch"],
+      answer: "OBD-II",
+    },
+    {
+      question: "Which of the following helps in collision avoidance?",
       options: [
-        "Application Layer",
-        "Edge Layer",
-        "Network Layer",
-        "Enterprise Layer",
+        "Blind spot monitoring",
+        "Rear view mirrors",
+        "Speedometer",
+        "Windshield wipers",
       ],
-      answer: "Edge Layer",
+      answer: "Blind spot monitoring",
     },
     {
-      question:
-        "Which of the following standards is used for wireless communication in industrial environments?",
-      options: ["Bluetooth Classic", "IEEE 802.11", "ISA 100.11a", "Z-Wave"],
-      answer: "ISA 100.11a",
+      question: "Which protocol is used in vehicular communication systems?",
+      options: ["DSRC", "HTTP", "MQTT", "LoRaWAN"],
+      answer: "DSRC",
     },
     {
-      question: "In the context of Industry 4.0, what is Digital Twin?",
+      question: "What does V2V communication stand for?",
       options: [
-        "A backup power system",
-        "A virtual representation of a physical system",
-        "A type of sensor",
-        "A redundant cloud server",
+        "Vehicle to Voltage",
+        "Vehicle to Vehicle",
+        "Voice to Voice",
+        "Vision to Vision",
       ],
-      answer: "A virtual representation of a physical system",
+      answer: "Vehicle to Vehicle",
     },
     {
-      question:
-        "Which standard provides guidelines for cybersecurity in industrial automation and control systems?",
-      options: ["ISO/IEC 27001", "ISA/IEC 62443", "IEEE 1451", "IEEE 802.15.4"],
-      answer: "ISA/IEC 62443",
-    },
-    {
-      question:
-        "Which protocol is most appropriate for sending sensor data in IIoT applications?",
-      options: ["SMTP", "MQTT", "FTP", "Telnet"],
-      answer: "MQTT",
-    },
-    {
-      question:
-        "Which of the following is NOT typically part of an IIoT gateway?",
+      question: "Which of these is not a smart mobility solution?",
       options: [
-        "Sensor interface",
-        "Data processing unit",
-        "Machine vision system",
-        "Communication module",
+        "Ride-sharing",
+        "Autonomous vehicles",
+        "Manual rickshaws",
+        "Electric buses",
       ],
-      answer: "Machine vision system",
+      answer: "Manual rickshaws",
     },
     {
       question:
-        "Which layer of the Purdue Model includes enterprise resource planning (ERP) systems?",
-      options: ["Level 0", "Level 1", "Level 4", "Level 2"],
-      answer: "Level 4",
+        "Which component is responsible for route optimization in smart logistics?",
+      options: ["Barcode", "Routing algorithm", "Scanner", "RFID tag"],
+      answer: "Routing algorithm",
+    },
+    {
+      question: "Which sensor detects lane departure?",
+      options: [
+        "Ultrasonic sensor",
+        "Infrared sensor",
+        "Camera sensor",
+        "Pressure sensor",
+      ],
+      answer: "Camera sensor",
     },
     {
       question:
-        "Which of the following is NOT a use case of Digital Twin in Industry 4.0?",
-      options: [
-        "Product design optimization",
-        "Predictive maintenance",
-        "Cloud security auditing",
-        "Performance monitoring",
-      ],
-      answer: "Cloud security auditing",
-    },
-    {
-      question: "What is the function of a smart actuator in IIoT systems?",
-      options: [
-        "To detect physical phenomena",
-        "To display user interfaces",
-        "To convert control signals into mechanical movement",
-        "To store data",
-      ],
-      answer: "To convert control signals into mechanical movement",
+        "Which communication technology is used in intelligent traffic systems?",
+      options: ["LoRa", "DSRC", "Zigbee", "Bluetooth"],
+      answer: "DSRC",
     },
     {
       question:
-        "Which characteristic of edge computing supports real-time IIoT applications?",
-      options: [
-        "Centralized processing",
-        "Cloud analytics",
-        "Low latency",
-        "Remote storage",
-      ],
-      answer: "Low latency",
+        "Which of the following is a challenge for autonomous vehicles?",
+      options: ["Manual control", "Data security", "Paperwork", "Fuel prices"],
+      answer: "Data security",
     },
     {
       question:
-        "In Industry 4.0, what role does AI play in predictive maintenance?",
-      options: [
-        "Introducing system faults",
-        "Replacing sensors",
-        "Analyzing sensor data to predict failures",
-        "Providing manual controls",
-      ],
-      answer: "Analyzing sensor data to predict failures",
-    },
-    {
-      question: "Which of the following is true about OPC UA?",
-      options: [
-        "It is limited to Windows platforms",
-        "It provides a secure and platform-independent communication architecture",
-        "It only supports analog data",
-        "It requires constant internet access",
-      ],
-      answer:
-        "It provides a secure and platform-independent communication architecture",
+        "Which protocol supports low-latency communication for vehicular networks?",
+      options: ["HTTP", "DSRC", "FTP", "SMS"],
+      answer: "DSRC",
     },
     {
       question:
-        "Which type of system provides supervisory-level control and data acquisition in industrial automation?",
-      options: ["PLC", "SCADA", "RTU", "Sensor Node"],
-      answer: "SCADA",
+        "Which of the following sensors is not commonly used in autonomous vehicles?",
+      options: ["LiDAR", "Radar", "PIR", "Camera"],
+      answer: "PIR",
     },
     {
-      question:
-        "What is the key advantage of using MQTT over HTTP in IIoT systems?",
+      question: "What is the purpose of geofencing in logistics?",
       options: [
-        "Higher power consumption",
-        "More data bandwidth required",
-        "Efficient lightweight communication",
-        "More verbose headers",
+        "Enable weather tracking",
+        "Virtual perimeter enforcement for tracking",
+        "Sensor calibration",
+        "Manual billing",
       ],
-      answer: "Efficient lightweight communication",
+      answer: "Virtual perimeter enforcement for tracking",
     },
   ],
   // <!-------------------------------------------- WEEK 10---------------------------------------------------------->
   "Week 10": [
     {
+      question: "Which of the following is a core benefit of Industrial IoT?",
+      options: [
+        "Increased manual labor",
+        "Improved operational efficiency",
+        "Reduced automation",
+        "Higher energy consumption",
+      ],
+      answer: "Improved operational efficiency",
+    },
+    {
       question:
-        "Which cloud computing model provides infrastructure as a service?",
-      options: ["SaaS", "IaaS", "PaaS", "FaaS"],
+        "Which standard is widely used in industrial automation for device communication?",
+      options: ["HTTP", "OPC UA", "SMTP", "FTP"],
+      answer: "OPC UA",
+    },
+    {
+      question:
+        "Which cloud service is typically used for storing and analyzing industrial data?",
+      options: ["Gmail", "AWS IoT", "Google Docs", "Dropbox"],
+      answer: "AWS IoT",
+    },
+    {
+      question:
+        "Which of the following is a key challenge of deploying IIoT systems?",
+      options: [
+        "Data security",
+        "Sensor cost",
+        "Increased manpower",
+        "Manual processes",
+      ],
+      answer: "Data security",
+    },
+    {
+      question: "Which of these is not a cloud deployment model?",
+      options: [
+        "Private cloud",
+        "Public cloud",
+        "Virtual cloud",
+        "Hybrid cloud",
+      ],
+      answer: "Virtual cloud",
+    },
+    {
+      question: "Which of the following refers to cloud computing on the edge?",
+      options: [
+        "Remote computing",
+        "Distributed computing",
+        "Edge computing",
+        "Fog computing",
+      ],
+      answer: "Fog computing",
+    },
+    {
+      question:
+        "Which communication protocol is designed for lightweight communication in IoT?",
+      options: ["HTTP", "SMTP", "MQTT", "FTP"],
+      answer: "MQTT",
+    },
+    {
+      question: "What is one function of a digital twin in manufacturing?",
+      options: [
+        "Physical replication",
+        "Energy generation",
+        "Virtual representation for real-time monitoring",
+        "Manual record keeping",
+      ],
+      answer: "Virtual representation for real-time monitoring",
+    },
+    {
+      question:
+        "Which layer in cloud architecture manages applications and services?",
+      options: ["Infrastructure", "Platform", "Application", "Network"],
+      answer: "Application",
+    },
+    {
+      question:
+        "Which of the following is a component of predictive maintenance?",
+      options: [
+        "Preventive maintenance schedule",
+        "Manual inspection",
+        "Data analytics",
+        "None of the above",
+      ],
+      answer: "Data analytics",
+    },
+    {
+      question: "Which among the following is a platform for Industrial IoT?",
+      options: ["Netflix", "ThingWorx", "WhatsApp", "Trello"],
+      answer: "ThingWorx",
+    },
+    {
+      question:
+        "Which of the following ensures access control and user identity management in IIoT?",
+      options: ["Firewall", "IAM", "VPN", "MAC address"],
+      answer: "IAM",
+    },
+    {
+      question:
+        "Which of the following is used to track machine performance over time?",
+      options: ["Sensors", "Dashboards", "Digital twin", "All of the above"],
+      answer: "All of the above",
+    },
+    {
+      question:
+        "What type of cloud model provides infrastructure resources on-demand?",
+      options: ["IaaS", "PaaS", "SaaS", "DaaS"],
       answer: "IaaS",
     },
     {
-      question: "What does PaaS stand for in cloud computing?",
-      options: [
-        "Platform as a Service",
-        "Protocol as a Service",
-        "Process as a System",
-        "Program as a Solution",
-      ],
-      answer: "Platform as a Service",
-    },
-    {
-      question: "Which of the following is a private cloud platform?",
-      options: [
-        "Amazon Web Services",
-        "Microsoft Azure",
-        "Google Cloud",
-        "OpenStack",
-      ],
-      answer: "OpenStack",
-    },
-    {
-      question: "Which is a major benefit of cloud computing?",
-      options: [
-        "Decreased accessibility",
-        "Increased maintenance costs",
-        "Scalability",
-        "Slower deployment",
-      ],
-      answer: "Scalability",
-    },
-    {
       question:
-        "Which among the following is NOT a deployment model of cloud computing?",
+        "Which type of maintenance avoids unexpected machine failures using real-time data?",
       options: [
-        "Public cloud",
-        "Private cloud",
-        "Distributed cloud",
-        "Native cloud",
+        "Scheduled maintenance",
+        "Preventive maintenance",
+        "Predictive maintenance",
+        "Corrective maintenance",
       ],
-      answer: "Native cloud",
-    },
-    {
-      question:
-        "What is the key function of virtualization in cloud computing?",
-      options: [
-        "Increases physical storage",
-        "Enables running multiple operating systems on a single physical system",
-        "Disables hardware-level interaction",
-        "Reduces network latency",
-      ],
-      answer:
-        "Enables running multiple operating systems on a single physical system",
-    },
-    {
-      question:
-        "Which of the following is a characteristic of cloud computing?",
-      options: [
-        "Fixed resource allocation",
-        "On-demand self-service",
-        "Manual provisioning",
-        "Limited network access",
-      ],
-      answer: "On-demand self-service",
-    },
-    {
-      question: "What is cloud elasticity?",
-      options: [
-        "The cost reduction in cloud systems",
-        "The ability to expand and reduce resources according to workload",
-        "The ability to resist cyber-attacks",
-        "A model of cloud storage",
-      ],
-      answer:
-        "The ability to expand and reduce resources according to workload",
-    },
-    {
-      question: "Which of the following is an example of a SaaS application?",
-      options: ["Microsoft Azure", "Google Docs", "Amazon EC2", "Docker"],
-      answer: "Google Docs",
-    },
-    {
-      question:
-        "Which one is NOT an essential characteristic of cloud computing according to NIST?",
-      options: [
-        "Broad network access",
-        "Resource pooling",
-        "Rapid elasticity",
-        "Physical resource locking",
-      ],
-      answer: "Physical resource locking",
-    },
-    {
-      question:
-        "Which cloud service provides a complete development and deployment environment in the cloud?",
-      options: ["IaaS", "PaaS", "SaaS", "BaaS"],
-      answer: "PaaS",
-    },
-    {
-      question:
-        "Which of the following provides identity and access management in cloud infrastructure?",
-      options: ["Cloud Storage", "Cloud Gateway", "Cloud IAM", "Cloud Compute"],
-      answer: "Cloud IAM",
-    },
-    {
-      question: "Which AWS service is used for object storage?",
-      options: ["EC2", "Lambda", "S3", "EBS"],
-      answer: "S3",
-    },
-    {
-      question: "What type of model is 'pay-as-you-go' in cloud computing?",
-      options: ["Subscription", "Flat-rate", "Utility", "Bulk"],
-      answer: "Utility",
-    },
-    {
-      question:
-        "Which of the following is NOT a benefit of serverless computing?",
-      options: [
-        "No server management",
-        "Automatic scaling",
-        "Pay for compute only",
-        "Requires manual scaling",
-      ],
-      answer: "Requires manual scaling",
+      answer: "Predictive maintenance",
     },
   ],
   // <!-------------------------------------------- WEEK 11---------------------------------------------------------->
   "Week 11": [
     {
-      question: "Which of the following is incorrect about Kuka - an IoT-Enabled Factory?",
-      options: ["A German robotics maker", "Built an IoT-enabled factory", "Robots are connected with a private cloud", "Deployed on the A330 and A350 final assembly lines in Toulouse"],
-      answer: "Deployed on the A330 and A350 final assembly lines in Toulouse"
+      question:
+        "Which of the following technologies is useful in disaster management?",
+      options: ["RFID", "GPS", "Zigbee", "All of the above"],
+      answer: "All of the above",
     },
     {
-      question: "__ is carried out by Amazon - Robotic Shelves. Fill in the blanks.",
-      options: ["Automated product search", "Manufacturing of drones", "AR app based end-to-end factory floor view", "None of the above"],
-      answer: "Automated product search"
+      question: "Which sensor is used for fire detection in smart buildings?",
+      options: ["Flame sensor", "PIR sensor", "Temperature sensor", "LDR"],
+      answer: "Flame sensor",
     },
     {
-      question: "Which of the following is incorrect about Maersk - Intelligent Shipping?",
-      options: ["It is a container shipping company.", "Uses IoT for preserving refrigerated containers.", "Does not use blockchain technology for supply chain optimization.", "Tracks assets and fuel consumption using sensors."],
-      answer: "Does not use blockchain technology for supply chain optimization."
+      question: "Which of these is a wearable health monitoring device?",
+      options: ["Smartwatch", "Smart plug", "Smart door", "Smart TV"],
+      answer: "Smartwatch",
     },
     {
-      question: "Which of the following represents the applications of IoT in Livestock Barns?",
-      options: ["Soil moisture sensors optimize irrigation and fertilization", "Monitoring health parameters of animals", "Drone-assisted mining monitoring", "None of the above"],
-      answer: "Monitoring health parameters of animals"
+      question: "Which sensor measures the heart rate?",
+      options: [
+        "Pulse sensor",
+        "Gas sensor",
+        "Vibration sensor",
+        "Ultrasonic sensor",
+      ],
+      answer: "Pulse sensor",
     },
     {
-      question: "In the context of Agricultural IoT, what do we mean by LAI?",
-      options: ["Leaf Area Index", "Layout Area Increment", "Low Anchor Installation", "None of the above"],
-      answer: "Leaf Area Index"
+      question: "What is the key use of smart wearables in healthcare?",
+      options: [
+        "Entertainment",
+        "Health monitoring",
+        "Gaming",
+        "Remote TV control",
+      ],
+      answer: "Health monitoring",
     },
     {
-      question: "Which of the following is/are a challenge faced by IoT in healthcare?",
-      options: ["Devices have limited computational capability", "Devices have limited memory", "Devices use low-power battery hence have short battery life", "All of the above"],
-      answer: "All of the above"
+      question:
+        "Which protocol is commonly used for sending healthcare sensor data?",
+      options: ["FTP", "MQTT", "HTTP", "SMTP"],
+      answer: "MQTT",
     },
     {
-      question: "What is the general action of healthcare body sensors in case some abnormalities are detected?",
-      options: ["Sensors do nothing", "Sensors automatically turned off", "Sensors trigger an alarm", "None of the above"],
-      answer: "Sensors trigger an alarm"
+      question: "Which challenge is most critical in smart healthcare systems?",
+      options: ["Battery life", "Data privacy", "Sensor size", "Connectivity"],
+      answer: "Data privacy",
     },
     {
-      question: "Confidentiality, Integrity, and Availability are the four security cornerstones of IIoT based Healthcare monitoring and management.",
-      options: ["Accelerometer", "Authentication", "Automation", "Auxiliary"],
-      answer: "Authentication"
+      question:
+        "Which device enables location tracking in emergency situations?",
+      options: ["Wi-Fi router", "RFID tag", "GPS device", "Bluetooth speaker"],
+      answer: "GPS device",
     },
     {
-      question: "Optimization and Autonomy are the features of which among the following IIoT models in the Power sector?",
-      options: ["SLA Model", "Peripheral Model", "Maturity Model", "Component Model"],
-      answer: "Maturity Model"
+      question: "What role does cloud computing play in healthcare?",
+      options: [
+        "Storing and processing medical data",
+        "Temperature monitoring",
+        "Power supply",
+        "Manual testing",
+      ],
+      answer: "Storing and processing medical data",
     },
     {
-      question: "In Smart grids supported by IIoT, data communication network is not integrated with the physical power transmission network?",
-      options: ["True", "False"],
-      answer: "False"
+      question: "Which wearable device tracks physical activity?",
+      options: [
+        "Fitness tracker",
+        "Smart plug",
+        "Smart switch",
+        "Smart speaker",
+      ],
+      answer: "Fitness tracker",
     },
     {
-      question: "Consider the following two statements with respect to Passive RFID tags and Active RFID tags. 1. Passive RFID tags have no internal power source whereas active RFID has a battery power source. 2. Passive RFID tags have longer range than Active RFID tags",
-      options: ["Both Statements 1 and 2 are correct", "Statement 1 is correct but 2 is not", "Statement 1 is incorrect while 2 is correct", "Both Statements 1 and 2 are incorrect"],
-      answer: "Statement 1 is correct but 2 is not"
+      question: "Which of the following supports fall detection?",
+      options: ["Accelerometer", "Gas sensor", "Thermal sensor", "GPS"],
+      answer: "Accelerometer",
     },
     {
-      question: "IIoT can be deployed in inventory management to automate which of the following activities?",
-      options: ["Only Stock-In Activities", "Only Stock-Out Activities", "Both Stock-In and Stock-Out Activities", "Neither Stock-In nor Stock-Out Activities"],
-      answer: "Both Stock-In and Stock-Out Activities"
+      question:
+        "Which of the following enables real-time alerts in patient monitoring?",
+      options: [
+        "Wired connections",
+        "Email reports",
+        "Sensor integration with cloud",
+        "Printed log books",
+      ],
+      answer: "Sensor integration with cloud",
     },
     {
-      question: "In the context of Network Security, what does behavioral analytics deal with?",
-      options: ["Detects abnormal behavior by the network", "Establishes a connection between the sender and receiver", "Generates new routes across the network", "None of the above"],
-      answer: "Detects abnormal behavior by the network"
+      question:
+        "Which parameter is NOT typically monitored in wearable healthcare devices?",
+      options: [
+        "Temperature",
+        "Heart rate",
+        "Oxygen level",
+        "Color preference",
+      ],
+      answer: "Color preference",
     },
     {
-      question: "IP rights are a risk when using AR/VR?",
-      options: ["True", "False"],
-      answer: "True"
+      question:
+        "Which is a major advantage of using IoT in disaster management?",
+      options: [
+        "Increased manual efforts",
+        "Faster emergency response",
+        "Paper-based records",
+        "None",
+      ],
+      answer: "Faster emergency response",
     },
     {
-      question: "Which of the following is NOT a stakeholder in Facility Management?",
-      options: ["Buildings", "Finance", "People", "Patents"],
-      answer: "Patents"
+      question: "Which of the following is NOT a wearable healthcare sensor?",
+      options: ["ECG", "SpO2", "Camera", "Temperature"],
+      answer: "Camera",
     },
   ],
   // <!-------------------------------------------- WEEK 12---------------------------------------------------------->
   "Week 12": [
     {
-      question: "Which among the following is not a challenge in deploying 5G in Industry 4.0?",
-      options: ["Latency", "Cost", "Coverage", "Bandwidth"],
-      answer: "Latency"
+      question: "Which technology is used to secure IoT communications?",
+      options: ["SSL/TLS", "HTTP", "POP3", "UDP"],
+      answer: "SSL/TLS",
     },
     {
-      question: "What does the 'smart' in smart cities refer to?",
-      options: ["High-rise buildings", "Technology-driven infrastructure", "Increased population", "Expanded road networks"],
-      answer: "Technology-driven infrastructure"
+      question: "Which of the following is a risk in IoT data sharing?",
+      options: [
+        "Data integrity",
+        "Data transparency",
+        "Data leakage",
+        "Data accessibility",
+      ],
+      answer: "Data leakage",
     },
     {
-      question: "What is the goal of a digital supply network?",
-      options: ["Faster manual labor", "Independent processes", "Integrated and optimized flow of materials and data", "Centralized production only"],
-      answer: "Integrated and optimized flow of materials and data"
+      question: "Which of these ensures confidentiality in IoT systems?",
+      options: [
+        "Encryption",
+        "Broadcasting",
+        "Data replication",
+        "Open access",
+      ],
+      answer: "Encryption",
     },
     {
-      question: "Which one of the following is an advantage of cognitive computing in smart factories?",
-      options: ["Slower decision-making", "Manual record-keeping", "Predictive analytics and automation", "High maintenance"],
-      answer: "Predictive analytics and automation"
+      question: "What is the goal of access control in IoT?",
+      options: [
+        "Granting access to all users",
+        "Restricting unauthorized access",
+        "Sharing credentials",
+        "None of the above",
+      ],
+      answer: "Restricting unauthorized access",
     },
     {
-      question: "What is the purpose of simulation in smart manufacturing?",
-      options: ["To create marketing campaigns", "To test and optimize processes before physical implementation", "To perform manual assembly", "To train only robots"],
-      answer: "To test and optimize processes before physical implementation"
+      question: "Which method is used to identify a user or device in IoT?",
+      options: ["Authentication", "Streaming", "Patching", "Scanning"],
+      answer: "Authentication",
     },
     {
-      question: "Which of the following technologies enables remote operation and maintenance of smart equipment?",
-      options: ["Augmented Reality (AR)", "Bluetooth only", "Wired sensors", "Printed circuit boards"],
-      answer: "Augmented Reality (AR)"
+      question: "What does availability in security refer to?",
+      options: [
+        "Data is visible to hackers",
+        "Services are always operational",
+        "Data is encrypted",
+        "Services are randomly assigned",
+      ],
+      answer: "Services are always operational",
     },
     {
-      question: "Which feature of 5G is critical for applications requiring real-time response?",
-      options: ["Low latency", "High storage", "Device encryption", "Power consumption"],
-      answer: "Low latency"
+      question: "Which of the following is NOT a security concern in IoT?",
+      options: ["Unauthorized access", "Data breach", "Latency", "Malware"],
+      answer: "Latency",
     },
     {
-      question: "What does IIoT primarily enable in smart manufacturing?",
-      options: ["Disconnection between processes", "Automation, monitoring, and optimization of industrial operations", "Manual intervention", "Slow processing"],
-      answer: "Automation, monitoring, and optimization of industrial operations"
+      question: "What is the use of firewalls in IoT systems?",
+      options: [
+        "Speed up network",
+        "Filter incoming and outgoing traffic",
+        "Increase latency",
+        "Data compression",
+      ],
+      answer: "Filter incoming and outgoing traffic",
     },
     {
-      question: "What is one way AI contributes to smart logistics?",
-      options: ["By creating bottlenecks", "By automating vehicle breakdowns", "By optimizing routes and delivery times", "By eliminating sensors"],
-      answer: "By optimizing routes and delivery times"
+      question: "Which of these helps maintain data integrity?",
+      options: ["Checksums", "Logs", "Email", "Chatbots"],
+      answer: "Checksums",
     },
     {
-      question: "Which concept refers to using data and analytics to improve product and service design?",
-      options: ["Data obfuscation", "Digital twin", "Predictive maintenance", "Remote diagnostics"],
-      answer: "Digital twin"
+      question: "Which is a challenge in managing IoT devices securely?",
+      options: [
+        "Ease of installation",
+        "Scalability",
+        "Battery life",
+        "Resource constraints",
+      ],
+      answer: "Resource constraints",
     },
     {
-      question: "Which of the following is not a benefit of smart cities?",
-      options: ["Improved resource management", "Data-driven public services", "Increased traffic congestion", "Better waste disposal"],
-      answer: "Increased traffic congestion"
+      question:
+        "Which type of attack floods a network with traffic to crash systems?",
+      options: ["Phishing", "DDoS", "Spoofing", "Sniffing"],
+      answer: "DDoS",
     },
     {
-      question: "Which technology provides real-time data from factory floors to cloud platforms?",
-      options: ["Manual logging", "Sensor networks", "Photocopy machines", "Plastic enclosures"],
-      answer: "Sensor networks"
+      question: "Which of these helps ensure secure software updates?",
+      options: [
+        "Over-the-air update with authentication",
+        "Manual patching only",
+        "Shared passwords",
+        "Disabled updates",
+      ],
+      answer: "Over-the-air update with authentication",
     },
     {
-      question: "Which of the following is a smart energy management solution?",
-      options: ["Electricity theft", "Demand response systems", "Constant peak load", "Unmonitored grids"],
-      answer: "Demand response systems"
+      question: "Which of the following stores and processes identity data?",
+      options: ["IAM system", "Firewall", "Proxy", "Router"],
+      answer: "IAM system",
     },
     {
-      question: "What is the benefit of using AR in equipment maintenance?",
-      options: ["Hides defects", "Replaces engineers", "Provides visual step-by-step guidance", "Makes processes longer"],
-      answer: "Provides visual step-by-step guidance"
+      question:
+        "Which security principle ensures data is not altered by unauthorized parties?",
+      options: ["Integrity", "Availability", "Redundancy", "Accessibility"],
+      answer: "Integrity",
     },
     {
-      question: "In Industry 4.0, what does interoperability refer to?",
-      options: ["Conflict between systems", "System failures", "Seamless communication between different devices and platforms", "Limited functionality"],
-      answer: "Seamless communication between different devices and platforms"
+      question: "Which device is commonly used for network security?",
+      options: ["Firewall", "Sensor", "Actuator", "Light switch"],
+      answer: "Firewall",
     },
   ],
 };
